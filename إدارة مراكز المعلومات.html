@@ -10,10 +10,21 @@
             text-align: center;
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            margin: 0;
+            padding-top: 80px; /* إضافة padding لتجنب تداخل العنوان مع المحتوى */
         }
 
         h1 {
             color: darkgreen;
+            position: fixed; /* جعل العنوان ثابتًا */
+            top: 0; /* تثبيته في أعلى الصفحة */
+            left: 0;
+            right: 0;
+            background-color: #f4f4f4; /* لون خلفية العنوان */
+            padding: 15px 0; /* إضافة padding للعنوان */
+            margin: 0;
+            z-index: 1000; /* التأكد من أن العنوان يظهر فوق العناصر الأخرى */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* إضافة ظل للعنوان */
         }
 
         .container {
@@ -50,6 +61,14 @@
         .back-btn:hover {
             background-color: #218838;
         }
+
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -68,6 +87,10 @@
 
     <br><br>
     <a href="index.html" class="back-btn">🔙 العودة إلى الفهرس</a>
+
+    <div class="footer">
+        جميع الحقوق محفوظة لدى وعدالله النعمي &copy;
+    </div>
 
 </body>
 
